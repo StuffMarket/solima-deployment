@@ -325,6 +325,15 @@
 }
 .contact-v2-footer-meta a:hover { color: var(--color-brand-aqua, #00cff4); }
 
+.contact-v2-footer-credit {
+  display: block;
+  width: auto;
+  height: 2rem;
+  max-width: min(6rem, 28vw);
+  object-fit: contain;
+  flex: 0 1 auto;
+}
+
 @media (max-width: 899px) {
   .contact-v2-header,
   .contact-v2-layout {

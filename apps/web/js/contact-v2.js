@@ -246,7 +246,13 @@ function buildFooter(footer) {
   const copyright = document.createElement("span");
   copyright.textContent = `© ${new Date().getFullYear()} SOLIMA Lda`;
 
-  meta.append(place, privacy, copyright);
+  const rightware = document.createElement("img");
+  rightware.className = "contact-v2-footer-credit";
+  rightware.src = "/assets/brand/rightware-logo.png";
+  rightware.alt = "Built by Rightware";
+  rightware.height = 32;
+
+  meta.append(place, privacy, copyright, rightware);
   inner.append(brand, meta);
   footer.append(inner);
 }
